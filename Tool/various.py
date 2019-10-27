@@ -8,10 +8,10 @@ import urllib.request
 import re
 
 def send_imessage(message, name):
-	""" Send a message through imessage app.
-	:param message: Message to send (trype string).
-	:param name: Name of the contact to send the message.  
-	"""
+    """ Send a message through imessage app.
+    :param message: Message to send (trype string).
+    :param name: Name of the contact to send the message.  
+    """
     cmd = '''osascript<<END
     tell application "Messages"
     send '''+''' "'''+message+'''" '''+''' to buddy'''+''' "'''+name+'''" '''+'''
