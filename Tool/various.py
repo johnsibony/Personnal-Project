@@ -21,7 +21,7 @@ def send_imessage(message, name):
 
 def scrapping_wikipedia(url):
     """ Scrap a wikipedia article.
-    :param url: Url of the wikipedia article
+    :param url: Url of the wikipedia article.
     Returns: List of sentences of the wikipedia article. 
     """
     page = urllib.request.urlopen(url)
@@ -36,7 +36,7 @@ def scrapping_wikipedia(url):
     return page
 
 if __name__ == '__main__':
-	send_imessage('Hey Johnny :)', "John Sibony")
+    send_imessage('Hey Johnny :)', "John Sibony")
     scrapping_wikipedia('https://en.wikipedia.org/wiki/Deinococcus_radiodurans')
 
 
