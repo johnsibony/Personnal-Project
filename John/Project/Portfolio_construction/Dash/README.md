@@ -32,7 +32,8 @@ weight\*value\_portfolio/premium\_contract\_to\_open.
 entry dates.
 
 Here is the instrument's methods to adjust the contracts: 
-- keep\_trade(dates): Keep contracts for which open date belongs to 'dates'. - stop\_date(dates): Close contracts at given 'dates'. 
+- keep\_trade(dates): Keep contracts for which open date belongs to 'dates'. 
+- stop\_date(dates): Close contracts at given 'dates'. 
 - stop\_gain(n\_time): Stop trades when the value is 'n\_time' times the entry value. 
 - pause(dates, time): Close all the contract openned between each dates of 'dates' and 'time' days after.
 
@@ -47,4 +48,4 @@ market. I2 is a short future S&P with 0.25 weight (for delta hedging).
 
 S2 is composed of two isntruments I1 and I2. I1 is long call VIX 5d
 rolled every month with 1 weight and closing the contract on bear
-market. I2 is a short future S&VIX with 0.05 weight (for delta hedging).
+market. I2 is a short future VIX with 0.05 weight (for delta hedging).
