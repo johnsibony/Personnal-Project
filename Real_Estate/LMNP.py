@@ -258,7 +258,9 @@ class BienImmobilier:
         assurance_habitation : float
             Frais (annuel) d'assurance pour le bien contre les sinistres.
         copropriete: float
-            Frais de copropriété (trimestriel).
+            Frais de copropriété (trimestriel) pour les charges courantes de l'immeuble. Des appels de roulement sont
+            possible pour réapprovisionner le fond de trésorerie si utilisé. Un fond de réserve pour la réalisation de futures
+            gros travaux peut également être demander.
         frais_service: float
             Frais (mensuel) de service tel que wifi, electricité, gaz.
             En général, ces charges sont payés par le locataire.
@@ -570,7 +572,9 @@ class InvestissementLocatif:
         assurance_habitation : float
             Frais (annuel) d'assurance pour le bien contre les sinistres.
         copropriete: float
-            Frais de copropriété (trimestriel).
+            Frais de copropriété (trimestriel) pour les charges courantes de l'immeuble. Des appels de roulement sont
+            possible pour réapprovisionner le fond de trésorerie si utilisé. Un fond de réserve pour la réalisation de futures
+            gros travaux peut également être demander.
         amortissement : Dict.
             Charges amortissables: "structure", "IGT", "agencement", "facade", "travaux", "meubles".
             key: str, nom de la charge.
